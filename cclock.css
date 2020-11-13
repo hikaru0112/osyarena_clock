@@ -1,0 +1,34 @@
+#main{
+    position: relative;
+    top: 500px;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+}
+#jp{
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: 500px;
+    height: 500px;
+ 
+}
+#ny{
+    position: absolute;
+    top: 1000px;
+    left: 400px;
+    width: 500px;
+    height: 500px;
+ 
+}
+#lo{
+    position: absolute;
+    top: 1500px;
+    left:400px;
+    width: 500px;
+    height: 500px;
+ 
+}
+body{
+    background-color: #000;
+}
