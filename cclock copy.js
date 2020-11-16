@@ -240,14 +240,14 @@ class AnalogClock extends Clock {
       const startAnimation = (() => {
 
          let timePassed = Date.now() - start;
-         if (timePassed >= 1000) {
+         if (timePassed >= 800) {
             clearInterval(startAnimation);
-            setInterval(setaclock, 100);
+            setInterval(setaclock, 20);
          }
          this.draw(s_sb, s_mb, s_hb);
-         s_sb += s_s * 100;
-         s_mb += s_m * 100;
-         s_hb += s_h * 100;
+         s_sb += s_s * 20;
+         s_mb += s_m * 20;
+         s_hb += s_h * 20;
       });
 
       const setaclock = (() => {
