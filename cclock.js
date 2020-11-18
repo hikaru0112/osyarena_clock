@@ -1,5 +1,5 @@
 const month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const week_list = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+const week_list = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 dayjs().format();
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
    const result = document.getElementsByClassName('clock');
    console.log(result[0]);
    console.log(result[1]);
-   for(i = 0;i<result.length;i++){
+   for (let i = 0; i < result.length; i++) {
       const aclock = new AnalogClock(result[i].getAttribute('locate'));
       aclock.setup(result[i], result[i].getAttribute('c_width'), result[i].getAttribute('c_hi')).start();
    }
-   
+
 });
 
 
@@ -216,12 +216,12 @@ class AnalogClock extends Clock {
       this.h_inner.style.color = 'white';
       this.h_inner.style.zIndex = '12';
 
-      this.h_inner_day.style.fontSize = '12px';
-      this.h_inner_day.style.marginTop = '30px';
+      this.h_inner_day.style.fontSize = '18px';
+      this.h_inner_day.style.marginTop = '30%';
       this.h_inner_day.style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
 
-      this.h_inner_time.style.marginTop = '2px';
-      this.h_inner_time.style.fontSize = '35px';
+      this.h_inner_time.style.marginTop = '2%';
+      this.h_inner_time.style.fontSize = '40px';
       this.h_inner_time.style.fontFamily = "'Courier New', Courier, monospace";
 
       return this;

@@ -1,9 +1,9 @@
 const month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const week_list = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+const week_list = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 dayjs().format();
-
+//localeは表示言語
 document.addEventListener('DOMContentLoaded', () => {
    const result = document.getElementsByClassName('clock');
    console.log(result[0]);
