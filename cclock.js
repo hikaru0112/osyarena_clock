@@ -102,6 +102,7 @@ class AnalogClock extends Clock {
       this.s_cycle.style.marginLeft = '-50%';
       this.s_cycle.style.marginTop = '-50%';
       this.s_cycle.style.zIndex = '1';
+      this.s_cycle.style.willChange = 'transform, opacity';
 
       this.m_cycle.style.width = '87%';
       this.m_cycle.style.height = '87%';
@@ -114,6 +115,7 @@ class AnalogClock extends Clock {
       this.m_cycle.style.marginLeft = '-43.5%';
       this.m_cycle.style.marginTop = '-43.5%';
       this.m_cycle.style.zIndex = '6';
+      this.m_cycle.style.willChange = 'transform, opacity';
 
       this.h_cycle.style.width = '74%';
       this.h_cycle.style.height = '74%';
@@ -135,6 +137,7 @@ class AnalogClock extends Clock {
       this.s_after.style.background = '#000';
       this.s_after.style.transformOrigin = 'right 50%';
       this.s_after.style.zIndex = '2';
+      this.s_after.style.willChange = 'transform, opacity';
 
       this.s_befor.style.display = 'block';
       this.s_befor.style.position = 'absolute';
@@ -144,6 +147,7 @@ class AnalogClock extends Clock {
       this.s_befor.style.background = '#000';
       this.s_befor.style.transformOrigin = 'left 50%';
       this.s_befor.style.zIndex = '3';
+      this.s_befor.style.willChange = 'transform, opacity';
 
       this.s_inner.style.position = 'absolute';
       this.s_inner.style.top = '2.16%';
@@ -155,6 +159,7 @@ class AnalogClock extends Clock {
       this.s_inner.style.background = '#000';
       this.s_inner.style.borderRadius = '50%';
       this.s_inner.style.zIndex = '4';
+      this.s_inner.style.willChange = 'transform, opacity';
 
       this.m_after.style.display = 'block';
       this.m_after.style.position = 'absolute';
@@ -164,6 +169,7 @@ class AnalogClock extends Clock {
       this.m_after.style.background = '#000';
       this.m_after.style.transformOrigin = 'right 50%';
       this.m_after.style.zIndex = '6';
+      this.m_after.style.willChange = 'transform, opacity';
 
       this.m_befor.style.display = 'block';
       this.m_befor.style.position = 'absolute';
@@ -173,6 +179,7 @@ class AnalogClock extends Clock {
       this.m_befor.style.background = '#000';
       this.m_befor.style.transformOrigin = 'left 50%';
       this.m_befor.style.zIndex = '7';
+      this.m_befor.style.willChange = 'transform, opacity';
 
       this.m_inner.style.position = 'absolute';
       this.m_inner.style.top = '2.16%';
@@ -184,6 +191,7 @@ class AnalogClock extends Clock {
       this.m_inner.style.background = '#000';
       this.m_inner.style.borderRadius = '50%';
       this.m_inner.style.zIndex = '8';
+      this.m_inner.style.willChange = 'transform, opacity';
 
       this.h_after.style.display = 'block';
       this.h_after.style.position = 'absolute';
@@ -193,6 +201,7 @@ class AnalogClock extends Clock {
       this.h_after.style.background = '#000';
       this.h_after.style.transformOrigin = 'right 50%';
       this.h_after.style.zIndex = '10';
+      this.h_after.style.willChange = 'transform, opacity';
 
       this.h_befor.style.display = 'block';
       this.h_befor.style.position = 'absolute';
@@ -202,6 +211,7 @@ class AnalogClock extends Clock {
       this.h_befor.style.background = '#000';
       this.h_befor.style.transformOrigin = 'left 50%';
       this.h_befor.style.zIndex = '11';
+      this.h_befor.style.willChange = 'transform, opacity';
 
       this.h_inner.style.position = 'absolute';
       this.h_inner.style.top = '2.16%';
@@ -215,6 +225,7 @@ class AnalogClock extends Clock {
       this.h_inner.style.textAlign = 'center';
       this.h_inner.style.color = 'white';
       this.h_inner.style.zIndex = '12';
+      this.h_inner.willChange = 'transform, opacity';
 
       this.h_inner_day.style.fontSize = '18px';
       this.h_inner_day.style.marginTop = '30%';
