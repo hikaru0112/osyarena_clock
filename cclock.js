@@ -3,7 +3,7 @@ const week_list = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 dayjs().format();
-
+//
 document.addEventListener('DOMContentLoaded', () => {
    const result = document.getElementsByClassName('clock');
    console.log(result[0]);
